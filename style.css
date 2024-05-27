@@ -1,0 +1,92 @@
+*{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #e2dada;
+}
+.controles{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    background: linear-gradient(90deg, #5d28b9, #5218b6);
+    height: 13vh;
+}
+.controle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+}
+button{
+    cursor: pointer;
+    background-color: #e4e1e1;
+    border: 1px solid #e4e1e1;
+    color: #31093bbe;
+    padding: 4px 5px;
+    border-radius: 5px 2px;
+}
+button:hover{
+    background-color: #31093b21;
+    border: 1px solid #e4e1e1;
+    color: #e4e1e1;
+    transition: 0.3s;
+}
+button:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+button:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+button:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+input[type='number'], #num_objetos{
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px 2px;
+    width: 150px;
+    font-size: medium;
+    text-indent: 65px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.171);
+    background-color: #31093b56;
+}
+.palco{
+    display: flex;
+    width: 100%;
+    min-height: 87vh;
+    --s: 50px;
+    --c: #0d0718;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #09021300 66%,#180825c9 68% 70%,#00000000 72%;
+    background: 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+    radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+    radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+    repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+    radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+  background-attachment: fixed;
+    position: absolute;
+    overflow: hidden;
+}
+.bola{
+    position: absolute;
+    border-radius: 100px;
+}
