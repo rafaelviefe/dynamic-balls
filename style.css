@@ -87,6 +87,10 @@ input[type='number'], #num_objetos{
     overflow: hidden;
 }
 .bola{
-    position: absolute;
-    border-radius: 100px;
+  position: absolute;
+  border-radius: 100px;
+  transition: background-color 0.5s, transform 0.5s;
+}
+.bola:hover {
+  transform: scale(1.2);
 }
